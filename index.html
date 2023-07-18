@@ -1,148 +1,94 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="zomato.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Meal For Your Ingredients</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=C"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="nv">
-      <nav>
-        <p>Get the app</p>
-        <div class="right">
-          <p>
-            <a class="module" href="module.html" target="_self" id="food123"
-              >Search the meal and receipe</a
-            >
-          </p>
-          <p>Add Restaurant</p>
-          <p>Log In</p>
-          <p>Sign up</p>
+  <body
+    class="background-img"
+    style="
+      background-image: url('background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <div class="container">
+      <div class="meal-wrapper">
+        <div class="meal-search">
+          <h2 class="title">Find Meals For Your Ingredients</h2>
+          <blockquote>
+            Real food doesn't have ingredients, real food is ingredients.<br />
+            <cite>- Jamie Oliver</cite>
+          </blockquote>
+
+          <div class="meal-search-box">
+            <input
+              type="text"
+              class="search-control"
+              placeholder="Enter an ingredient"
+              id="search-input"
+            />
+            <button type="submit" class="search-btn btn" id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
         </div>
-      </nav>
-      <div class="logo">
-        <img
-          src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png"
-          alt=""
-        />
-      </div>
-      <div class="text">
-        <h1>Get the best food and cool drinks</h1>
-      </div>
-      <div class="inp">
-        <input type="text" placeholder="Search for the food" />
+
+        <div class="meal-result">
+          <h2 class="title">Your Search Results:</h2>
+          <div id="meal">
+            <!-- meal item -->
+            <!-- <div class = "meal-item">
+            <div class = "meal-img">
+              <img src = "food.jpg" alt = "food">
+            </div>
+            <div class = "meal-name">
+              <h3>Potato Chips</h3>
+              <a href = "#" class = "recipe-btn">Get Recipe</a>
+            </div>
+          </div> -->
+            <!-- end of meal item -->
+          </div>
+        </div>
+
+        <div class="meal-details">
+          <!-- recipe close btn -->
+          <button
+            type="button"
+            class="btn recipe-close-btn"
+            id="recipe-close-btn"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+
+          <!-- meal content -->
+          <div class="meal-details-content">
+            <!-- <h2 class = "recipe-title">Meals Name Here</h2>
+          <p class = "recipe-category">Category Name</p>
+          <div class = "recipe-instruct">
+            <h3>Instructions:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+          </div>
+          <div class = "recipe-meal-img">
+            <img src = "food.jpg" alt = "">
+          </div>
+          <div class = "recipe-link">
+            <a href = "#" target = "_blank">Watch Video</a>
+          </div> -->
+          </div>
+        </div>
       </div>
     </div>
-    <br />
-    <div class="card">
-      <div class="crd">
-        <img
-          src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
-          alt=""
-        />
-        <h3>Order Online</h3>
-        <p>stay home and order to your doorstep</p>
-      </div>
-      <div class="crd">
-        <img
-          src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
-          alt=""
-        />
-        <h3>Order Online</h3>
-        <p>stay home and order to your doorstep</p>
-      </div>
-      <div class="crd">
-        <img
-          src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
-          alt=""
-        />
-        <h3>Order Online</h3>
-        <p>stay home and order to your doorstep</p>
-      </div>
-    </div>
-
-    <div class="coll">
-      <div class="txt">
-        <h1>collection</h1>
-        <p>Explore all the foods we have in our restaurant</p>
-      </div>
-
-      <div class="rest">
-        <img
-          src="https://images.pexels.com/photos/1449775/pexels-photo-1449775.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt=""
-        />
-        <img
-          src="https://images.pexels.com/photos/1322184/pexels-photo-1322184.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt=""
-        />
-        <img
-          src="https://images.pexels.com/photos/776538/pexels-photo-776538.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt=""
-        />
-        <img
-          src="https://images.pexels.com/photos/1449775/pexels-photo-1449775.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt=""
-        />
-      </div>
-    </div>
-
-    <div class="app">
-      <img
-        src="https://b.zmtcdn.com/data/o2_assets/a500ffc2ab483bc6a550aa635f4e55531648107832.png"
-        alt=""
-      />
-      <h1>Get the zomato App</h1>
-    </div>
-
-    <div class="btn">
-      <h1></h1>
-      <button>Explore options near me</button>
-      <button>popular cities near me</button>
-      <button>popular restaurant near me</button>
-      <button>top restaurant near me</button>
-      <button>cities we deliver to</button>
-    </div>
-
-    <div class="footer">
-      <div class="list">
-        <h2>About zomato</h2>
-        <p>who we are</p>
-        <p>blog</p>
-        <p>work with us</p>
-        <p>investor relations</p>
-        <p>report fraud</p>
-      </div>
-
-      <div class="list">
-        <h2>ZOMAVERSE</h2>
-        <p>Zomato</p>
-        <p>Blinkit</p>
-        <p>Feeding india</p>
-        <p>hyperpure</p>
-        <p>Zomoland</p>
-      </div>
-
-      <div class="list">
-        <h2>FOR RESTAURANTS</h2>
-        <p>Partner with us</p>
-        <p>Apps for you</p>
-      </div>
-      <div class="list">
-        <h2>FOR ENTERPRISE</h2>
-        <p>Zomato for work</p>
-      </div>
-      <div class="list">
-        <h2>Learn more</h2>
-        <p>Privacy</p>
-        <p>Security</p>
-        <p>Terms</p>
-        <p>Sitemap</p>
-      </div>
-    </div>
+    <script src="script.js"></script>
   </body>
+  <style></style>
 </html>
