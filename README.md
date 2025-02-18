@@ -16,7 +16,7 @@ The **Software Construction Management** project is a web-based application desi
 
 1. Clone the repository to your local machine:
     ```bash
-    git clone https://github.com/KishoreBharathiB/Software-Construction-Management.git
+    git clone https://github.com/KishoreBharathiB/SoftwareConstruction.git
     ```
 
 2. Open the `index.html` file in a web browser to view the application.
